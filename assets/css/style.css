@@ -602,8 +602,6 @@ body {
 @media (max-width: 1024px) {
     .main-content .bannerSection .content .intro {
         width: 48%;
-        font-size: 45px;
-        line-height: 50px;
     }
 
     .main-content .bannerSection .content .intro .post {
@@ -688,7 +686,6 @@ body {
         margin: 0 0 2px;
     }
 
-    .portfolio .content .box .textPart .detail,
     .resume .content .tab-content .tab-pane .boxPart .box .topPart .TP {
         font-size: 14px;
         line-height: 20px;
@@ -714,5 +711,74 @@ body {
 
     .resume .content .tab-content {
         margin-top: 25px;
+    }
+}
+
+@media (max-width: 425px) {
+    .title {
+        font-size: 35px;
+        line-height: 40px;
+    }
+
+    .resume .content .tab-content .tab-pane .Education.boxPart::before,
+    .resume .content .tab-content .tab-pane .boxPart .box::before,
+    .resume .content .tab-content .tab-pane .boxPart .box::after,
+    .resume .content .tab-content .tab-pane .Experience.boxPart::before {
+        display: none;
+    }
+
+    .resume .content .tab-content .tab-pane .boxPart {
+        padding: 0;
+    }
+    
+    .portfolio .content .box .textPart .detail {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .resume .content .tab-content .tab-pane .boxPart .box .detailPart .detail {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .main-content .bannerSection .content .intro {
+        font-size: 35px;
+        line-height: 40px;
+        margin-bottom: 10px;
+    }
+
+    .main-content .bannerSection .content .intro .post {
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    .resume .content .tab-content .tab-pane .boxPart .box .topPart .topTitle {
+        font-size: 18px;
+        line-height: 23px;
+        margin: 0 0 2px;
+    }
+
+}
+
+@media (max-width: 375px) {
+    .resume .content .nav-tabs .nav-link {
+        font-size: 16px;
+    }
+
+    .resume .content .tab-content .tab-pane .boxPart .box .topPart .TP {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .resume .content .tab-content .tab-pane .boxPart .box .topPart .topTitle {
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
+
+@media (max-width: 320px) {
+    .main-content .bannerSection .content .intro {
+        font-size: 30px;
+        line-height: 35px;
     }
 }
