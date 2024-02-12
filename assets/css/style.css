@@ -65,7 +65,7 @@
     font-family: "Montserrat";
 }
 
-body{
+body {
     background-color: #ECF0F3;
 }
 
@@ -105,6 +105,12 @@ body{
     font-size: 24px;
     font-weight: 700;
     color: var(--White);
+}
+
+.header .navbar .navbar-toggler {
+    border: 0;
+    outline: 0;
+    box-shadow: none;
 }
 
 .header .navbar .navbar-collapse {
@@ -172,11 +178,11 @@ body{
     margin: 0;
 }
 
-.main-content .bannerSection .content .contactPart{
+.main-content .bannerSection .content .contactPart {
     margin-top: 30px;
 }
 
-.main-content .bannerSection .content .contactPart .contactHead{
+.main-content .bannerSection .content .contactPart .contactHead {
     font-size: 22px;
     line-height: 26px;
     font-weight: 500;
@@ -184,13 +190,13 @@ body{
     margin-bottom: 10px;
 }
 
-.main-content .bannerSection .content .contactPart .contactInfo{
+.main-content .bannerSection .content .contactPart .contactInfo {
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
 
-.main-content .bannerSection .content .contactPart .contactInfo .contact{
+.main-content .bannerSection .content .contactPart .contactInfo .contact {
     font-size: 18px;
     line-height: 22px;
     font-weight: 500;
@@ -201,7 +207,7 @@ body{
     gap: 10px;
 }
 
-.main-content .bannerSection .content .contactPart .contactInfo .contact .email{
+.main-content .bannerSection .content .contactPart .contactInfo .contact .email {
     font-size: 18px;
     line-height: 22px;
     font-weight: 500;
@@ -223,6 +229,7 @@ body{
     box-shadow: var(--shadow-white-3);
     border-radius: 8px;
     margin-top: 25px;
+    width: 100%;
 }
 
 .main-content .secondSection .content .box:hover {
@@ -308,7 +315,7 @@ body{
     padding: 50px 0;
 }
 
-.portfolio .content a{
+.portfolio .content a {
     text-decoration: none;
     color: var(--black-title);
     display: flex;
@@ -416,7 +423,7 @@ body{
     position: relative;
 }
 
-.resume .content .tab-content .tab-pane .Education.boxPart::before{
+.resume .content .tab-content .tab-pane .Education.boxPart::before {
     content: "";
     position: absolute;
     height: 92%;
@@ -438,7 +445,7 @@ body{
     border-radius: 5px;
 }
 
-.resume .content .tab-content .tab-pane .Experience.boxPart::before{
+.resume .content .tab-content .tab-pane .Experience.boxPart::before {
     bottom: 0;
 }
 
@@ -511,7 +518,7 @@ body{
     line-height: 22px;
     color: var(--black-title);
     font-weight: 500;
-    margin: 0;
+    margin: 0 0 5px;
 }
 
 .resume .content .tab-content .tab-pane .boxPart .box:hover .topPart {
@@ -524,7 +531,7 @@ body{
     color: var(--White);
 }
 
-.resume .content .tab-content .tab-pane .Skills{
+.resume .content .tab-content .tab-pane .Skills {
     display: grid;
     gap: 20px;
 }
@@ -536,7 +543,7 @@ body{
     color: var(--black-title);
 }
 
-.resume .content .tab-content .tab-pane .Skills .progress-charts .progress{
+.resume .content .tab-content .tab-pane .Skills .progress-charts .progress {
     background: #dce1e4;
     box-shadow: none;
     height: 13px;
@@ -554,7 +561,7 @@ body{
     border-radius: 14px;
 }
 
-.resume .content .tab-content .tab-pane .Skills .progress-charts .progress .progress-bar .percent-label{
+.resume .content .tab-content .tab-pane .Skills .progress-charts .progress .progress-bar .percent-label {
     position: absolute;
     right: 0;
     top: -22px;
@@ -569,56 +576,143 @@ body{
 }
 
 @media (max-width: 1280px) {
-    .main-content .bannerSection .content .intro{
+    .main-content .bannerSection .content .intro {
         width: 45%;
     }
-    .main-content .secondSection .content .box{
+
+    .main-content .secondSection .content .box {
         padding: 50px 30px;
     }
-    .portfolio .content .box{
+
+    .portfolio .content .box {
         padding: 20px;
     }
-    .resume .content .tab-content .tab-pane .boxPart .box .topPart .topTitle{
+
+    .resume .content .tab-content .tab-pane .boxPart .box .topPart .topTitle {
         font-size: 40px;
         line-height: 45px;
     }
-    .resume .content .tab-content .tab-pane .boxPart .box .topPart .TP{
+
+    .resume .content .tab-content .tab-pane .boxPart .box .topPart .TP {
         font-size: 25px;
         line-height: 30px;
     }
 }
 
 @media (max-width: 1024px) {
-    .main-content .bannerSection .content .intro{
+    .main-content .bannerSection .content .intro {
         width: 48%;
         font-size: 45px;
         line-height: 50px;
     }
-    .main-content .bannerSection .content .intro .post{
+
+    .main-content .bannerSection .content .intro .post {
         font-size: 35px;
         line-height: 40px;
     }
-    .main-content .secondSection .content .box .text .description{
+
+    .main-content .secondSection .content .box .text .description {
         font-size: 18px;
     }
-    .main-content .secondSection .content .box{
+
+    .main-content .secondSection .content .box {
         padding: 20px;
     }
+
     .resume .content .tab-content .tab-pane .boxPart .box .topPart .topTitle {
         font-size: 35px;
         line-height: 40px;
     }
+
     .portfolio .content .box .textPart .detail,
     .resume .content .tab-content .tab-pane .boxPart .box .topPart .TP {
         font-size: 20px;
         line-height: 24px;
     }
+
     .resume .content .tab-content .tab-pane .boxPart .box .detailPart .detail {
         font-size: 18px;
         line-height: 22px;
     }
+
     .portfolio .content .box .name {
         font-size: 22px;
         line-height: 27px;
-    }    
+    }
+}
+
+@media (max-width: 991px) {
+
+    .main-content .bannerSection {
+        padding: 30px 0;
+    }
+
+    .main-content .bannerSection .content .intro {
+        width: 62%;
+    }
+
+    .main-content .bannerSection .content .contactPart {
+        margin-top: 20px;
+    }
+
+    .main-content .secondSection .content {
+        padding: 35px 0;
+    }
+
+    .resume .content .tab-content .tab-pane .boxPart .box .topPart .topTitle {
+        font-size: 30px;
+        line-height: 35px;
+    }
+}
+
+@media (max-width: 767px) {
+    .main-content .bannerSection .content .intro {
+        width: 100%;
+    }
+
+    .main-content .bannerSection .content .description {
+        font-size: 16px;
+    }
+
+    .main-content .bannerSection .content .intro {
+        margin-bottom: 15px;
+    }
+
+    .main-content .bannerSection .content .contactPart {
+        margin-top: 15px;
+    }
+
+    .resume .content .tab-content .tab-pane .boxPart .box .topPart .topTitle {
+        font-size: 20px;
+        line-height: 25px;
+        margin: 0 0 2px;
+    }
+
+    .portfolio .content .box .textPart .detail,
+    .resume .content .tab-content .tab-pane .boxPart .box .topPart .TP {
+        font-size: 14px;
+        line-height: 20px;
+        margin: 0 0 5px;
+    }
+
+    .resume .content .tab-content .tab-pane .boxPart .box .topPart {
+        padding-bottom: 6px;
+    }
+
+    .resume .content .tab-content .tab-pane .boxPart .box .detailPart .detail {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .resume .content .tab-content .tab-pane .boxPart .box {
+        padding: 25px;
+    }
+
+    .resume .content .tab-content .tab-pane .boxPart .box .detailPart {
+        padding: 15px 0;
+    }
+
+    .resume .content .tab-content {
+        margin-top: 25px;
+    }
 }
